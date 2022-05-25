@@ -63,30 +63,30 @@
             <form class="modal-form" autocomplete="off">
               <label class="form-field">
                 <span class="form-label">Имя</span>
-                <div class="box-input">
-                  <input class="form-input" type="text" name="name" placeholder=" " />
+                <span class="box-input">
+                  <input class="form-input" type="text" name="client-name" placeholder=" " />
                   <svg class="form-icon" width="18" height="18">
                     <use href="./images/baground/sprite-icons.svg#person-black"></use>
                   </svg>
-                </div>
+                </span>
               </label>
               <label class="form-field">
                 <span class="form-label">Телефон</span>
-                <div class="box-input">
-                  <input class="form-input" type="text" name="name" placeholder=" " />
+                <span class="box-input">
+                  <input class="form-input" type="text" name="client-phone" placeholder=" " />
                   <svg class="form-icon" width="18" height="18">
                     <use href="./images/baground/sprite-icons.svg#phone-black"></use>
                   </svg>
-                </div>
+                </span>
               </label>
               <label class="form-field">
                 <span class="form-label">Почта</span>
-                <div class="box-input">
-                  <input class="form-input" type="text" name="name" placeholder=" " />
+                <span class="box-input">
+                  <input class="form-input" type="text" name="client-email" placeholder=" " />
                   <svg class="form-icon" width="18" height="18">
                     <use href="./images/baground/sprite-icons.svg#email-black"></use>
                   </svg>
-                </div>
+                </span>
               </label>
               <label class="form-field comments">
                 <span class="form-label">Комментарий</span>
@@ -97,13 +97,13 @@
                 ></textarea>
               </label>
               <label class="form-checkbox">
-                <div class="checkbox-conteiner">
+                <span class="checkbox-conteiner">
                   <input class="checkbox" type="checkbox" name="agreement" value="accept" />
                   <svg class="checkbox-form-icon" width="16" height="15">
                     <use href="./images/baground/sprite-icons.svg#check-1"></use>
                   </svg>
                   <span class="checkbox-unchecked"></span>
-                </div>
+                </span>
                 <span class="checkbox-link"
                   >Соглашаюсь с рассылкой и принимаю
                   <a class="accept-link" href="#">Условия договора</a></span
@@ -453,9 +453,14 @@
           <p class="subscription-title">Подпишитесь на рассылку</p>
           <form class="form-subscription">
             <label>
-              <input class="subscription-mail" type="mail" name=" " placeholder="E-mail" />
+              <input
+                class="subscription-mail"
+                type="email"
+                name="subscription"
+                placeholder="E-mail"
+              />
             </label>
-            <button class="button">
+            <button class="button" type="submit">
               Подписаться
               <svg class="subscription-latter" width="24" height="24">
                 <use href="./images/baground/sprite-icons.svg#letter"></use>
